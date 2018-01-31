@@ -47,11 +47,11 @@ graph = mapper.map(projected_data,
 
 # Tooltips with image data for every cluster member
 mapper.visualize(graph,
-                 path_html="keplermapper_digits_custom_tooltips.html",
+                 path_html="keplermapper_digits_custom_tooltips2.html",
                  graph_gravity=0.25,
                  custom_tooltips=tooltip_s)
 # Tooltips with the target y-labels for every cluster member
 mapper.visualize(graph,
-                 path_html="keplermapper_digits_ylabel_tooltips.html",
+                 path_html="keplermapper_digits_ylabel_tooltips2.html",
                  graph_gravity=0.25,
                  custom_tooltips=labels)
