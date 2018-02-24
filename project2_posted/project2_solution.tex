@@ -1,0 +1,33 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{geometry}
+\usepackage{enumerate}
+\usepackage[shortlabels]{enumitem}
+\usepackage{graphicx}
+
+\usepackage{hyperref}
+
+\begin{document}
+\title{CS 6965 Advanced Data Visualization\\{\bf Project 2}}
+\author{Yulong Liang (u1143816)}
+\maketitle
+
+\section{The Greedy Algorithm Implementation (3 pts)}
+First, I use the greedy algorithm to find ASUs. Find all the tracts with an unemployment rate greater than or equal to $0.065\%$ (refer to as \textbf{"seeds"}). Then use the greedy algorithm to expand from these seeds. Namely, for each round, dissolve each seed with its most unemployed neighbour that will maintain the total unemployment rate greater than or equal to $0.065\%$. Do this until all the seeds are surrounded with less unemployed neighbour that can no longer keep the unemployment rate above $0.065\%$.\\
+
+After that, I modified the algorithm to select the most popular tract that keeps the total unemployment rate to be above $0.065\%$ at the last step. This improve the total population to 361904.\\
+
+The program outputs two csv files which contain high unemployment areas and low unemployment areas respectively. It also outputs 18 json files containing the information of each high unemployment area as well as the whole ASUs. These files are for the visualization part. 
+
+\section{The Visualization Design (2 pts)}
+First, use \texttt{bootstrap} as the web framework to improve user experience as well as achieve responsive layout for portable devices.\\
+Second, use \texttt{d3.js} to implement interactive visualization. \\
+
+Left part is the Utah Tracts Map. Click to select or unselect tracts. Scroll to zoom in and zoom out. Techniques include json file reading, map projection, color scale, data binding, element selection, attributes modification, tooltip and mouse event.\\
+Right part is the control panel and info panel. Click the buttons to discover the precalculated areas. Techniques include json file reading, and d3 html element manipulation.\\
+The bottom part shows the details of the selected tracts.\\
+
+The link of the visualization is \url{https://leong1016.github.io/}. The json file of map is huge. It might take a while to load.
+
+\end{document}
