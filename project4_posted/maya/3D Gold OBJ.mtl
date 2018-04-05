@@ -1,0 +1,22 @@
+newmtl Default
+Ka 0 0 0
+Kd 0.827451 0.658824 0.345098
+Ks 1 1 1
+Ni 1
+Ns 200
+Tf 1 1 1
+d 1
+map_bump 3D Gold Bump map.jpg
+bump 3D Gold Bump map.jpg
+
+newmtl Default
+Ka 0 0 0
+Kd 0.827451 0.658824 0.345098
+Ks 1 1 1
+Ni 1
+Ns 200
+Tf 1 1 1
+d 1
+map_bump 3D Gold Bump map.jpg
+bump 3D Gold Bump map.jpg
+
